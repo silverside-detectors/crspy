@@ -9,7 +9,8 @@ Here are the places to change the variables to the relevant files on your comput
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
                             # Working Directory Location
 #~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~#
-defaultdir = "C:/user/example_working_directory" # CHANGE THIS TO YOUR WORKING DIRECTORY
+#defaultdir = "C:/user/example_working_directory" # CHANGE THIS TO YOUR WORKING DIRECTORY
+defaultdir = '/Users/ainglis/CRS/analysis'
 
 noval = -999
 

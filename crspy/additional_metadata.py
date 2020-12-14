@@ -251,10 +251,10 @@ def nmdb_get(startdate, enddate, station="JUNG"):
     pre = pre[0].text
     pre = pre[pre.find('start_date_time'):]
     pre = pre.replace("start_date_time   1HCOR_E", "")
-    f = open(nld['defaultdir']+"data/nmdb/tmp.txt", "w")
+    f = open(nld['defaultdir']+"/data/nmdb/tmp.txt", "w")
     f.write(pre)
     f.close()
-    df = open(nld['defaultdir']+"data/nmdb/tmp.txt", "r")
+    df = open(nld['defaultdir']+"/data/nmdb/tmp.txt", "r")
     lines = df.readlines()
     df.close()
     lines = lines[1:]
@@ -283,7 +283,7 @@ def nmdb_get_alt(startdate, enddate):
         station = string - station code from NMDB site
             e.g. "YKTK", default == "JUNG"
     """
-    df = open(nld['defaultdir']+"data/nmdb/tmp.txt", "r")
+    df = open(nld['defaultdir']+"/data/nmdb/tmp.txt", "r")
     lines = df.readlines()
     df.close()
     lines = lines[1:]
@@ -357,7 +357,7 @@ def KG_func(meta, country, sitenum):
 
     else:
       
-        era5 = xr.open_dataset(nld['defaultdir']+"data/era5land/"+nld['era5_filename']+".nc") #
+        era5 = xr.open_dataset(nld['defaultdir']+"/data/era5land/"+nld['era5_filename']+".nc") #
         try:
             era5site = era5.sel(site=sitecode) 
         except:

@@ -206,7 +206,7 @@ def prepare_data(fileloc, intentype=None):
     # Read in the time zone of the site
     print("Collecting ERA-5 Land variables...")
     try:
-        era5 = xr.open_dataset(nld['defaultdir']+"data/era5land/"+nld['era5_filename']+".nc") #
+        era5 = xr.open_dataset(nld['defaultdir']+"/data/era5land/"+nld['era5_filename']+".nc") #
         try:
             era5site = era5.sel(site=sitecode) 
         except:

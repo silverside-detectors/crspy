@@ -63,7 +63,7 @@ For the purposes of this workflow there is an example `meta_data.csv` pre-filled
 
 The process to download ERA5-Land is time consuming. The documentation explains this process in greater detail [here](https://github.com/danpower101/crspy/wiki/ERA5-Land-Data), for this workflow, a pre-prepared netcdf example is given. This should be copied into the `data/era5land` folder.
 
-Once you have copied the ERA5-Land data into the `data/era5land` folder you will need to change a variable in the `name_list.py` file. Here you will change the `era5_filenam` variable to match the name of the ERA5-Land netcdf. Here this would be:
+Once you have copied the ERA5-Land data into the `data/era5land` folder you will need to change a variable in the `name_list.py` file. Here you will change the `era5_filename` variable to match the name of the ERA5-Land netcdf. Here this would be:
 
 `era5_filename = "example_era5land"`
 
